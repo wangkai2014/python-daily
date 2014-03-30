@@ -1,0 +1,65 @@
+#int binary represent,not float
+print bin(3)
+#test if its string
+print isinstance('ss',basestring)
+print bool('s')
+print chr(2)
+def f():
+	pass
+print classmethod(f)
+print cmp(2,"3")
+print dict(x='a',y='b',z='c')
+print dir()
+print 5/3,5%3
+print divmod(5, 3)
+t=('a','b','c')
+l=['a','b','c']
+d={'x':'a','y':'b','z':'c'}
+for k,v in enumerate(d):
+	print k,v
+for i in enumerate(d):
+	print i
+print zip(enumerate(d))
+print zip(t,l)
+print '%3.2d %7s' % (5,'ds')
+print globals()
+import os
+print hash(os.path)
+import sys
+print dir(sys.stdin)
+print sys.stdin.__doc__
+print len(l)
+print list(t)
+print list(d)
+print locals()
+l=[x*x for x in range(3)]
+for i in l:
+	print i
+for i in l:
+	print i
+l=(x*x for x in range(3))
+for i in l:
+	print i
+	print i+1
+for i in l:
+	print i
+#l=iter(l)
+#print next(l)
+def exit(*args,**kwargs):
+	print args
+def exit1(*args,**kwargs):
+	print args*2
+import atexit
+atexit.register(exit,['dad','saasaas'])
+atexit.register(exit1,['dad','saasaas'])
+import copy
+l2=[['asd','sdas'],'sad']
+t2=copy.copy(l2)
+t3=copy.deepcopy(l2)
+l2[1]='ssssssssssssssssssssssssss'
+l2[0][0]='ddddddddd'
+print l2,t2,t3
+f=open('./decorator.py','r')
+s=[]
+[s.append(i) for i in f]
+print s

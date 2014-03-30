@@ -2,7 +2,8 @@
 # coding=utf-8
 # Copyright@wangkai2014@gmail.com 2014-03-12 08:17:15
 
-
+import pdb
+pdb.set_trace()
 class magicmethod(object):
 
     #def __new__(self):
